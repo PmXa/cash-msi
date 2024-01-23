@@ -3,14 +3,6 @@ Shopping in debit vs credit card comparison
                              PmXa. Jan 2024
 ---------------------------------------- */
 
-/* ----------------
-  Data section 📄
----------------- */
-
-const ti = 12;    // Tasa de rendimiento anualizada en %
-// const form_tp = document.getElementById('form-vp').value;    // Tasa de cashback en %
-// const form_vp = document.getElementById('form-vp').value;  // Valor de cada punto en efectivo
-
 /* --------------
   Functions 👀  
 -------------- */
