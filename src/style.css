@@ -1,58 +1,185 @@
 /* -----------------
   Elements by type
------------------ */
+------------------ */
 
-/* https://www.color-meanings.com/list-of-colors-names-hex-codes/ */
+/* Normalize */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Elements */
 
 body {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
   background-color: #fffefc;
   color: #fcbe24;
-  padding: 0 24px;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0 24px;
+}
+
+button{
+  background-color: #03C04A;
+  border: 2.5px solid #151e3d;
+    border-radius: 8px;
+  color: #151e3d;
+    font-family: 'Consolas', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+  padding: 4px 16px;
+}
+
+button:hover { 
+  background-color: #fcbe24;
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
   border: 2px solid #fcbe24;
     border-radius: 5px;
   text-align: right;
-  width: 48px;
+  width: 72px;
 }
 
 p {
   color: darkslategrey;
 }
 
+/* ------------------
+  Elements by class
+------------------ */
+
+.info-button{
+  background: none;
+  cursor: pointer;
+  border: none;
+  margin-left: 1vw;
+  padding: 0;
+}
+
+.info-button:hover .info-emoji{
+  display: none;
+}
+
+.info-button:hover::before{
+  content: "❓";
+}
+
 /* ---------------
   Elements by ID
 --------------- */
 
+#section-1{
+  display: flex;
+    align-items: center;  
+    flex-direction: column;
+    row-gap: 3vh;
+  margin-bottom: 3vh;
+}
+
+#header{
+  font-size: 2.5rem;
+}
+
+#intro-info{
+  text-align: justify;
+  width: 80%;
+}
+
 #data-form {
+  border: 2px dashed #151e3d;
+    border-radius: 8px;
   color: darkslategrey;
 
   display: grid;
-    grid-template-columns: 1fr 1fr;
-      column-gap: 5px;
+    grid-template-columns: 2fr 1fr 0.15fr;
       row-gap: 1vh;
+
+  padding: 8px 10px;
+}
+
+#data-form > span{
+  margin: 0 8px;
 }
 
 #log-container {
   background-color: #151e3d;
-  border-radius: 5%;
+  border-radius: 15px;
   font-family: 'Consolas', monospace;
   margin: 2px;
-  padding: 2%;
+  padding: 3%;
   white-space: pre;
 }
 
-#section-1{
+#help-popup {
+  display: none;
+
+  background-color: #fffefc;
+  border: 1px solid #ccc;
+    border-radius: 10px;
+
+  padding: 20px;
+  position: fixed;
+    top: 50%;
+    left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 999;
 }
 
-/* #title-info {
-  width: 750%;
+#popup-content{
+  justify-content: center;
+  margin-right: 5px;
+  margin-top: 12px;
+  text-align: justify;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 114, 118, 0.85);
+  z-index: 998;
+}
+
+#closeButton {
+  cursor: pointer;
+  position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/* ---------------------------------
+  For bigger screens #mobilefirst 
+--------------------------------- */
+
+/* @media only screen 
+  and (min-device-width: 900px){
+    body{
+      display:flex;
+        flex-direction: row;
+    }
+
+    button:hover { 
+      background-color: #fcbe24;
+    }
+
+  .info-button:hover{
+  }
+
 } */

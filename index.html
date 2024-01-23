@@ -3,63 +3,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/src/icon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
   </head>
 
   <body>
 
-    <div id="section-1">
+    <section id="section-1">
 
-      <div id="title-info">
-        <h1 id="header">
-          Cash vs. MSI
-        </h1>
+      <h1 id="header">
+        Cash vs. MSI
+      </h1>
         
-        <p>
-          This should be an explanation...
-        </p>
-      </div>
+      <p id="intro-info">
+        ¿Quieres hacer una compra, pero no sabes si te conviene hacerlo al contado o a meses sin intereses? ¡Sólo ingresa los datos debajo y descúbrelo?
+        <br><br>
+        💡 Si no sabes qué significa cada campo, haz clic en los emojis de la derecha.
+      </p>
 
       <div id="data-input">
         <form id="data-form">
 
           <label for="form-c">Monto de compra:</label>
           <input type="number" id="form-c" value=6000 min="0" step="0.01" required>
-
+          <button class="info-button" type="button" onclick="showHelp()">
+             <span class="info-emoji">💲</span>
+          </button>
+          
           <label for="form-n">Meses:</label>
           <input type="number" id="form-n" value=6 min="0" max="24" step="1" required>
-  
+          <button class="info-button" type="button" onclick="showHelp()">
+            <span class="info-emoji">📆</span>
+          </button>
+          
           <label for="form-ti">Tasa de interés:</label>
           <input type="number" id="form-ti" value=11.25 min="0" step="0.01" required>
-
+          <button class="info-button" type="button" onclick="showHelp()">
+            <span class="info-emoji">🤔</span>
+          </button>
+          
           <label for="form-tp">Tasa de puntos:</label>
-          <input type="number" id="form-tp" value=1.00 min="0" step="0.01" required>
-
+          <input type="number" id="form-tp" value=11.00 min="0" step="0.01" required>
+          <button class="info-button" type="button" onclick="showHelp()">
+            <span class="info-emoji">🧐</span>
+          </button>
+          
           <label for="form-vp">Valor por punto:</label>
           <input type="number" id="form-vp" value=0.10 min="0" step="0.01" required>
-  
-          <button type="button" onclick="updateValues()">
-            ¡Calcular!
+          <button class="info-button" type="button" onclick="showHelp()">
+            <span class="info-emoji">🤨</span>
           </button>
-
+  
         </form>
       </div>
 
+      <button type="button" onclick="updateValues()">
+        OK
+      </button>
+
+    </section>
+
+    <!--------------------------------
+      Pop-up section for the help info
+    --------------------------------->
+  
+    <div id="help-popup">
+      <span id="closeButton" onclick="closePopup()">❌</span>
+      <p id="popup-content"></p>
     </div>
+
+    <div id="overlay" onclick="closePopup()"></div>
 
     <!-- Console logger -->
     <div id="log-container"></div>
     
-    <div>
+    <section id="section-3">
       <!-- Results plot -->
       <div id="plot-container"></div>
 
       <!-- Little explanation -->
       <p>
-        <!-- This is some text -->
+        <!-- This is some text pending -->
       </p>
-    </div>
+    </section>
 
     <script src="src/script.js"></script>
   </body>

@@ -6,6 +6,7 @@
 
 ## ToDo:
 
+- [ ] Delete the link to the color page 😅
 - [ ] Add a favicon
 - [ ] Add a `?` with hover-on description of parameters
 - [ ] Add the actual explanation 😂
