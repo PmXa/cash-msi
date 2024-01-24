@@ -7,12 +7,4 @@ El desarrollo matemático se encuentra en el archivo [Cash vs. MSI](./Cash%20-%2
 > [!note]
 > El favicon se hizo con emojis de [OpenMoji](https://openmoji.org/). ¡Vale la pena visitarlos!
 
-## ToDo:
-
-- [ ] Add the link to the mathematical background in the web app
-- [ ] Make the website reactive (desktop view)
-- [ ] Build the diagram depending on the $t_i$, $t_p$ and $v_p$ values
-- [ ] Mark on the diagram the amount $c$ of a given purchase
-- [ ] Make the input fields display an `$` as you type (optional)
-
 ---
