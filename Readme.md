@@ -1,17 +1,18 @@
 # 💵🤜 Cash vs. MSI 🤛💳
 
-- Este es un pequeño proyecto...
-- Los fundamentos matemáticos se encuentran en el archivo...
-- El sitio...
+Este es un pequeño proyecto para (a) determinar cuantitativamente si conviene hacer una compra de contado o a meses sin intereses y (b) practicar algo de JavaScript que nació cuando compré un Dock USB de Razer (💚) en Amazon. 
 
-The favicon was made with resources from [OpenMoji](https://openmoji.org/), check them out!
+El desarrollo matemático se encuentra en el archivo [Cash vs. MSI](./Cash%20-%20MSI.pdf), y también hay una [web app](https://pmxa.github.io/cash-msi/) disponible con *mobile-first responsive design*.
+
+> [!note]
+> El favicon se hizo con emojis de [OpenMoji](https://openmoji.org/). ¡Vale la pena visitarlos!
 
 ## ToDo:
 
-- [ ] Add a favicon
-- [ ] Add the link to the mathematical background
-- [ ] Make the website reactive
-- [ ] Make the input fields display an `$` as you type
-- [ ] Build the diagram depending on the ti, tp and vp values
+- [ ] Add the link to the mathematical background in the web app
+- [ ] Make the website reactive (desktop view)
+- [ ] Build the diagram depending on the $t_i$, $t_p$ and $v_p$ values
 - [ ] Mark on the diagram the amount $c$ of a given purchase
+- [ ] Make the input fields display an `$` as you type (optional)
 
+---

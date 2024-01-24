@@ -37,10 +37,10 @@ function showHelp(field){
   };
 
   document.getElementById('overlay').style.display = 'block';
-
   document.getElementById('help-popup').style.display = 'block';
   document.getElementById('popup-content').innerHTML = help[field];
 }
+
 
 function closePopup() {
   // Hide the popup container and overlay
@@ -136,7 +136,6 @@ function updateValues() {
   
   finalPad = Math.floor((31-6)/2);
   console.log (" ".repeat(finalPad) + "~PmXa~")
-
 }
 
 /* ---------------
