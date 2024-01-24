@@ -10,7 +10,7 @@ M. en C. PmXa
 
 En general, se tiene la opción de realizar compras de dos formas:
 
-1. En una sola exhibición, o *al contado* y
+1. En una sola exhibición, o *al contado*, y
 2. Difiriendo el total de la compra en varios periodos, por lo general meses, y sin intereses adicionales.
 
 La decisión entre una modalidad u otra suele darse, o bien por un cálculo rápido e instintivo, o bien por una elección súbita motivada por factores como educación financiera, percepción de la situación económica personal actual o habilidad del vendedor por promocionar más un modalidad que otra.
@@ -194,8 +194,9 @@ $$
 <img src="./img/1 - f(c).png" style="width:85%">
 
 <p style = "color: SteelBlue; text-align: center">
-    Figura 1: Gráfica de la Ecuación (11) para una compra de $6000 (a) al contado con un programa de puntos equivalente al 1% y (b) a 6 meses sin intereses con una tasa de rendimiento del 11%.
+    Figura 1: Gráfica de la Ecuación (11) para una (a) al contado con un programa de puntos equivalente al 1% de la compra devuelto en efectivo y (b) a 6 meses sin intereses con una tasa de rendimiento del 11%.
 </p>
+
 
 Sin embargo, y como se habrá podido notar en la Figura 1, la Ecuación (11) presenta más de una raíz (i.e. $f(c) = 0$) debido a la naturaleza discreta de la Ecuación (4). Por consiguiente, también existe más de un *punto de equilibrio* y se desistió de hallarlo a partir de un método numérico. En cambio, se trazaron las Figuras 2 y 3, que sirven para (1) ejemplificar algunos de los escenarios comunes de compra y (2) hacer una comparación rápida entre los beneficios que se obtienen en las distintas modalidades de compra.
 
